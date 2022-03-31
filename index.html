@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <div class="container">
+        <div class="display">
+            <p id="output">0</p>
+        </div>
+        <div class="baris-satu">
+            <button id="b1-1" onclick="forclear()">C</button>
+            <button id="b1-2" onclick="perc()">%</button>
+            <button id="b1-3" onclick="fordisplay('/')">/</button>
+        </div>
+        <div class="baris-dua">
+            <button id="b2-1" onclick="fordisplay('7')">7</button>
+            <button id="b2-2" onclick="fordisplay('8')">8</button>
+            <button id="b2-3" onclick="fordisplay('9')">9</button>
+            <button id="b2-4" onclick="fordisplay('*')">x</button>
+        </div>
+        <div class="baris-tiga">
+            <button id="b3-1" onclick="fordisplay('4')">4</button>
+            <button id="b3-2" onclick="fordisplay('5')">5</button>
+            <button id="b3-3" onclick="fordisplay('6')">6</button>
+            <button id="b3-4" onclick="fordisplay('-')">-</button>
+        </div>
+        <div class="baris-empat">
+            <button id="b4-1" onclick="fordisplay('1')">1</button>
+            <button id="b4-2" onclick="fordisplay('2')">2</button>
+            <button id="b4-3" onclick="fordisplay('3')">3</button>
+            <button id="b4-4" onclick="fordisplay('+')">+</button>
+        </div>
+        <div class="baris-lima">
+            <button id="b5-1" onclick="fordisplay('0')">0</button>
+            <button id="b5-2" onclick="fordisplay('.')">.</button>
+            <button id="b5-3" onclick="solve()">=</button>
+        </div>
+    </div>
+</body>
+</html>
